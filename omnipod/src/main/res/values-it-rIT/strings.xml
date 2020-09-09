@@ -117,6 +117,7 @@
     <string name="omnipod_errors">Errori</string>
     <string name="omnipod_cmd_basal_profile_not_set_is_same">Il profilo basale è lo stesso, non sarà impostato di nuovo.</string>
     <string name="omnipod_custom_action_reset_rileylink">Reset config.ne RileyLink</string>
+    <string name="omnipod_time_or_timezone_change">Ora e/o fuso orario cambiati nel pod</string>
     <string name="omnipod_composite_time">%1$s e %2$s</string>
     <string name="omnipod_time_ago">%1$s fa</string>
     <string name="omnipod_waiting_for_rileylink_connection">Attesa connessione RileyLink...</string>
