@@ -67,6 +67,7 @@
     <string name="omnipod_cmd_set_bolus">Imposta bolo</string>
     <string name="omnipod_cmd_cancel_bolus">Cancella bolo</string>
     <string name="omnipod_cmd_set_tbr">Imposta basale temporanea</string>
+    <string name="omnipod_cmd_cancel_tbr_by_driver">Cancella basale temporanea (internamente dal driver)</string>
     <string name="omnipod_cmd_cancel_tbr">Cancella basale temporanea</string>
     <string name="omnipod_cmd_set_basal_schedule">Imposta piano basale</string>
     <string name="omnipod_cmd_get_pod_status">Ottieni stato pod</string>
@@ -97,6 +98,7 @@
     <string name="omnipod_init_pod_prime_pod">Carica pod</string>
     <string name="omnipod_init_pod_fill_cannula">Riempi cannula</string>
     <string name="omnipod_init_pod_set_basal_profile">Imposta profilo basale</string>
+    <string name="omnipod_deactivate_pod_cancel_delivery">Cancella erogazione</string>
     <string name="omnipod_deactivate_pod_deactivate_pod">Disattiva pod</string>
     <!-- Omnipod - Base -->
     <string name="omnipod_alert_finish_pairing_reminder">Fine promemoria associazione</string>
@@ -106,7 +108,9 @@
     <string name="omnipod_alert_shutdown_imminent">L\'arresto è imminente</string>
     <string name="omnipod_alert_low_reservoir">Livello serbatoio basso</string>
     <string name="omnipod_alert_unknown_alert">Avviso sconosciuto</string>
-    <string name="omnipod_error_set_basal_failed_delivery_might_be_suspended">Impostazione profilo basale non riuscita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
+    <string name="omnipod_error_set_basal_failed_delivery_might_be_suspended">Impostazione profilo basale fallita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
+    <string name="omnipod_error_set_basal_might_have_failed_delivery_might_be_suspended">L\'Impostazione del profilo basale potrebbe essere fallita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
+    <string name="omnipod_error_set_basal_failed_delivery_suspended">Impostazione profilo basale fallita. L\'erogazione è sospesa! Riprendi manualmente l\'erogazione dalla scheda Omnipod.</string>
     <string name="omnipod_rl_stats">Statistiche RL</string>
     <string name="omnipod_pod_firmware_version">Versione firmware</string>
     <string name="omnipod_errors">Errori</string>
