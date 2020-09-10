@@ -5,17 +5,37 @@
     <string name="description_pump_omnipod">Интеграция на помпата Omnipod, изисква RileyLink устройство (с фърмуер минимум 2.0 ) .</string>
     <!-- Omnipod Configuration -->
     <!-- Omnipod - Fragment -->
+    <string name="omnipod_total_delivered">%1$.2fЕ</string>
     <string name="omnipod_reservoir_left">%1$.2f Е остават</string>
     <string name="omnipod_reservoir_over50">Над 50 Е</string>
+    <string name="omnipod_warning">Внимание</string>
+    <string name="omnipod_pod_status_running">Изпълнява</string>
     <!-- Omnipod - Dialogs -->
     <string name="omnipod_frequency">Omnipod (433.91 MHz)</string>
     <!-- Omnipod - Error -->
+    <string name="omnipod_error_operation_not_possible_no_configuration">Забранено действие.\n\n Първо трябва да конфигурурате Omnipod , преди да използвате тази операция,.</string>
     <string name="omnipod_error_illegal_init_action_type">Неправилен PodInitActionType: %1$s</string>
     <string name="omnipod_driver_error_unexpected_exception_type">Непредвидена грешка. Моля, докладвайте! (тип: %1$s).</string>
+    <string name="omnipod_driver_error_invalid_parameters">Неуспешна комуникация: получени грешни входни параметри</string>
+    <string name="omnipod_driver_error_communication_failed_timeout">Връзката е неуспешна: таймаут</string>
     <string name="omnipod_driver_error_communication_failed_unexpected_exception">Комуникацията е неуспешна: възникнала е неочаквана грешка. Моля, докладвайте!</string>
+    <string name="omnipod_driver_error_crc_mismatch">Неуспешна комуникация: проверката на целостта на съобщението е неуспешна</string>
+    <string name="omnipod_driver_error_invalid_packet_type">Неуспешна комуникация: получени грешни входни параметри</string>
+    <string name="omnipod_driver_error_invalid_progress_state">Съобщението е неуспешно: Pod е в лошо състояние</string>
+    <string name="omnipod_driver_error_invalid_response">Неуспешна комуникация: получени грешни входни параметри</string>
+    <string name="omnipod_driver_error_invalid_message_sequence_number">Неуспешна комуникация: получи съобщение с невалиден номер на последователност от Pod</string>
+    <string name="omnipod_driver_error_invalid_message_address">Неуспешна комуникация: получи съобщение с невалиден номер на последователност от Pod</string>
+    <string name="omnipod_driver_error_message_decoding_failed">Неуспешна комуникация: получени грешни входни параметри</string>
+    <string name="omnipod_driver_error_nonce_resync_failed">Комуникацията е неуспешна: nonce ресинхронизирането е неуспешно</string>
+    <string name="omnipod_driver_error_nonce_out_of_sync">Комуникацията е неуспешна: nonce ресинхронизирането е неуспешно</string>
+    <string name="omnipod_driver_error_not_enough_data">Комуникацията е неуспешна: няма достатъчно данни, получени от Pod</string>
+    <string name="omnipod_driver_error_pod_fault">Грешка на Pod (%1$03d %2$s). Моля, деактивирайте вашия Pod и стартирайте нов</string>
+    <string name="omnipod_driver_error_pod_returned_error_response">Комуникацията е неуспешна: Pod върна отговор с грешка</string>
     <!-- Omnipod - Pod Mgmt -->
     <string name="omnipod_cmd_init_pod">Инициализация на Pod</string>
     <string name="omnipod_cmd_deactivate_pod">Деактивирай под</string>
+    <string name="omnipod_cmd_bolus_value">%1$.2fЕ</string>
+    <string name="omnipod_cmd_bolus_value_with_carbs">%1$.2f U, CH=%2$.1f g</string>
     <string name="omnipod_cmd_pod_history_na">Историята на Pod не е достъпна в момента.</string>
     <string name="omnipod_init_pod_wizard_step1_title">Напълни Pod</string>
     <string name="omnipod_init_pod_wizard_step2_title">Пълнене</string>
@@ -30,9 +50,30 @@
     <string name="omnipod_init_pod_wizard_pod_info_remove_pod_description">Pod изключен.\n\nмоля, извадете Pod от тялото си и го хвърли.</string>
     <string name="omnipod_init_pod_pair_pod">Сдвояване на под</string>
     <string name="omnipod_init_pod_prime_pod">Пълнене на под</string>
+    <string name="omnipod_deactivate_pod_deactivate_pod">Деактивирай под</string>
     <!-- Omnipod - Base -->
+    <string name="omnipod_alert_finish_pairing_reminder">Край на напомняне за сдвояване</string>
     <string name="omnipod_alert_finish_setup_reminder_reminder">Край на напомнянето за настройка</string>
+    <string name="omnipod_alert_expiration">Подът скоро ще изтече</string>
+    <string name="omnipod_alert_expiration_advisory">Подът скоро ще изтече</string>
     <string name="omnipod_alert_shutdown_imminent">Спирането е неизбежно</string>
     <string name="omnipod_alert_low_reservoir">Минимален инсулин в резервоара</string>
     <string name="omnipod_alert_unknown_alert">Непозната аларма</string>
+    <string name="omnipod_errors">Грешки</string>
+    <string name="omnipod_cmd_basal_profile_not_set_is_same">Профилът е идентичен.</string>
+    <string name="omnipod_refresh">Обнови</string>
+    <string name="omnipod_suspend_delivery_short">Спиране</string>
+    <string name="omnipod_preference_category_rileylink">RileyLink</string>
+    <string name="omnipod_preference_category_other">Друго</string>
+    <string name="omnipod_wizard_button_exit">Изход</string>
+    <string name="omnipod_wizard_button_next">Следващ</string>
+    <string name="omnipod_history_item_date">Дата</string>
+    <plurals name="omnipod_minutes">
+        <item quantity="one">%1$d минути</item>
+        <item quantity="other">%1$d минути</item>
+    </plurals>
+    <plurals name="omnipod_hours">
+        <item quantity="one">%1$d часа</item>
+        <item quantity="other">%1$d часа</item>
+    </plurals>
 </resources>
