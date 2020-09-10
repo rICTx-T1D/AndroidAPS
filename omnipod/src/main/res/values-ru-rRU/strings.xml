@@ -65,12 +65,17 @@
     <string name="omnipod_init_pod_wizard_step3_desc">\nПодготовьте место инфузии. Удалите колпачок с иглы и защиту липкого слоя, Установите Pod на тело.\n\nесли канюля выступает, нажмите <b>отменить</b> и утилизируйте Pod.\n\Нажмите <b>Далее</b> чтобы вставить канюлю и начать подачу базала.</string>
     <string name="omnipod_init_pod_wizard_step4_title">Установка канюли (катетера) </string>
     <string name="omnipod_init_pod_wizard_step4_action_header">Определение графика подачи базала и установка канюли. \n\n Когда проверены все шаги, нажмите <b>Далее</b>.</string>
+    <string name="omnipod_init_pod_wizard_pod_info_title">Информация о Pod</string>
     <string name="omnipod_init_pod_wizard_pod_info_init_pod_description">\nПомпа сейчас активна.\n\nБазальный график запрограммирован и катетер установлен.\n\nУбедитесь в том, что канюля установлена правильно и замените Pod, если такой уверенности нет.</string>
     <string name="omnipod_remove_pod_wizard_step1_desc">\nНажмите <b>Далее</b> для деактивации Пода\n\n<b>Примечание:</b> Это Приостановит всякую подачу инсулина и деактивирует помпу.</string>
     <string name="omnipod_remove_pod_wizard_step2_title">Деактивация помпы</string>
+    <string name="omnipod_remove_pod_wizard_step2_action_header">Деактивация помпы.\n\n, Когда проверены все элементы, нажмите <b>Далее</b>.\n\n<b>Примечание:</b> Если деактивация постоянно завершается ошибкой, нажмите <b>Отменить</b> и примените <b>Сброс помпы</b> чтобы принудительно сбросить состояние Pod\'a.</string>
     <string name="omnipod_init_pod_wizard_pod_info_remove_pod_description">Pod деактивирован.\n\nУдалите и утилизируйте Pod.</string>
     <string name="omnipod_init_pod_pair_pod">Сопряжение Pod</string>
     <string name="omnipod_init_pod_prime_pod">Заполнение инфузионной секции Pod\'a</string>
+    <string name="omnipod_init_pod_fill_cannula">Заполнение катетера</string>
+    <string name="omnipod_init_pod_set_basal_profile">Установка базального профиля</string>
+    <string name="omnipod_deactivate_pod_cancel_delivery">Отмена подачи инсулина</string>
     <!-- Omnipod - Base -->
     <string name="omnipod_alert_finish_setup_reminder_reminder">Напоминание о завершении настройки</string>
     <string name="omnipod_alert_expiration">Срок работы Pod\'a истекает</string>
