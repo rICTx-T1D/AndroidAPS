@@ -8,7 +8,7 @@
     <string name="treatmentssafety_maxbolus_title">Max bolo consentito [U]</string>
     <string name="treatmentssafety_maxcarbs_title">Max CHO consentiti [g]</string>
     <string name="nav_preferences">Preferenze</string>
-    <string name="nav_refreshtreatments">Ricarica trattamenti da NS</string>
+    <string name="nav_refreshtreatments">Aggiorna trattamenti da NS</string>
     <string name="nav_resetdb">Resetta database</string>
     <string name="reset_db_confirm">Vuoi davvero resettare i database?</string>
     <string name="nav_exit">Esci</string>
@@ -337,7 +337,7 @@
     <string name="openapsma_autosensdata_label">Dati autosens</string>
     <string name="openapsma_scriptdebugdata_label">Script debug</string>
     <string name="openapsama_useautosens">Usa la funzione Autosens</string>
-    <string name="refresheventsfromnightscout">Ricarica eventi da NS</string>
+    <string name="refresheventsfromnightscout">Aggiorna eventi da NS</string>
     <string name="deletefuturetreatments">Elimina trattamenti nel futuro</string>
     <string name="eatingsoon">Pasto a breve</string>
     <string name="hypo">Ipoglicemia</string>
@@ -603,7 +603,7 @@
     <string name="maxiobset">Max IOB impostata correttamente</string>
     <string name="hasbgdata">BG disponibile da sorgente selezionata</string>
     <string name="combo_programming_bolus">Programmazione micro per erogazione</string>
-    <string name="combo_refresh">Ricarica</string>
+    <string name="combo_refresh">Aggiorna</string>
     <string name="combo_pump_state_label">Stato</string>
     <string name="combo_pump_activity_label">Attività</string>
     <string name="combo_no_pump_connection">Nessuna connessione per %1$d min</string>
@@ -908,7 +908,7 @@
     <string name="eb_formatter">%1$.2f / %2$.2f U per %3$d min</string>
     <string name="enable_tbr_over_notification">Abilita notifica di fine TBR\n(impostazione micro)</string>
     <string name="disable_tbr_over_notification">Disabilita notifica di fine TBR\n(impostazione micro)</string>
-    <string name="refresh">Ricarica</string>
+    <string name="refresh">Aggiorna</string>
     <string name="description_pump_insight_local">Integrazione del microinfusore Accu-Chek Insight</string>
     <string name="not_inserted">Non inserito</string>
     <string name="short_status_last_connected">Ultima conn: %1$d min fa</string>
