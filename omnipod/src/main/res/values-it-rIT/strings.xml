@@ -111,6 +111,7 @@
     <string name="omnipod_error_set_basal_failed_delivery_might_be_suspended">Impostazione profilo basale fallita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
     <string name="omnipod_error_set_basal_might_have_failed_delivery_might_be_suspended">L\'Impostazione del profilo basale potrebbe essere fallita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
     <string name="omnipod_error_set_basal_failed_delivery_suspended">Impostazione profilo basale fallita. L\'erogazione è sospesa! Riprendi manualmente l\'erogazione dalla scheda Omnipod.</string>
+    <string name="omnipod_error_set_temp_basal_failed_old_tbr_might_be_cancelled">Impostazione basale temporanea fallita. Se una basale temporanea era precedentemente in esecuzione, potrebbe essere stata cancellata. Aggiorna manualmente lo stato del pod dalla scheda Omnipod.</string>
     <string name="omnipod_bolus_failed_uncertain_smb">Impossibile verificare se il bolo SMB (%1$.2f U) è riuscito. <b>Se sei sicuro che il bolo non sia riuscito, dovresti eliminare manualmente l\'inserimento dalla sezione Trattamenti.</b></string>
     <string name="omnipod_rl_stats">Statistiche RL</string>
     <string name="omnipod_pod_firmware_version">Versione firmware</string>
@@ -122,7 +123,7 @@
     <string name="omnipod_time_ago">%1$s fa</string>
     <string name="omnipod_waiting_for_rileylink_connection">Attesa connessione RileyLink...</string>
     <string name="omnipod_bolus_did_not_succeed">Il bolo non è riuscito</string>
-    <string name="omnipod_refresh">Ricarica</string>
+    <string name="omnipod_refresh">Aggiorna</string>
     <string name="omnipod_resume_delivery">Riprendi erogazione</string>
     <string name="omnipod_error_pod_suspended">Pod sospeso</string>
     <string name="omnipod_less_than_a_minute_ago">Meno di un minuto fa</string>
