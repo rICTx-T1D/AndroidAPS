@@ -63,6 +63,7 @@
     <string name="omnipod_pod_mgmt_title">Gestione pod</string>
     <string name="omnipod_cmd_init_pod">Inizializza pod</string>
     <string name="omnipod_cmd_deactivate_pod">Disattiva pod</string>
+    <string name="omnipod_cmd_discard_pod">Scarta pod</string>
     <string name="omnipod_cmd_pod_history">Storico pod</string>
     <string name="omnipod_cmd_set_bolus">Imposta bolo</string>
     <string name="omnipod_cmd_cancel_bolus">Cancella bolo</string>
@@ -93,6 +94,7 @@
     <string name="omnipod_remove_pod_wizard_step1_title">Disattiva pod</string>
     <string name="omnipod_remove_pod_wizard_step1_desc">\nPremi <b>Avanti</b> per disattivare il pod.\n\n<b>Nota:</b> Questo sospenderà tutta l\'erogazione di insulina e disattiverà il pod.</string>
     <string name="omnipod_remove_pod_wizard_step2_title">Disattivazione del pod</string>
+    <string name="omnipod_remove_pod_wizard_step2_action_header">Disattivazione del pod.\n\nQuando tutti gli elementi sono stati controllati, puoi premere <b>Avanti</b>.\n\n<b>Nota:</b> se la disattivazione fallisce di continuo, premi <b>Annulla</b> e usa l\'opzione <b>Scarta pod</b> per resettare forzatamente lo stato del pod.</string>
     <string name="omnipod_init_pod_wizard_pod_info_remove_pod_description">Pod disattivato.\n\nRimuovi il pod dal tuo corpo e gettalo.</string>
     <string name="omnipod_init_pod_pair_pod">Associa pod</string>
     <string name="omnipod_init_pod_prime_pod">Carica pod</string>
