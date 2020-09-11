@@ -23,6 +23,7 @@
     <string name="omnipod_reservoir_over50">Oltre 50 U</string>
     <string name="omnipod_pod_address">Indirizzo pod</string>
     <string name="omnipod_pod_expiry">Scadenza pod</string>
+    <string name="omnipod_warning">Avviso</string>
     <string name="omnipod_pod_status_no_active_pod">Nessun pod attivo</string>
     <string name="omnipod_pod_status_waiting_for_pair_and_prime">Configurazione in corso (attesa associazione e caricamento)</string>
     <string name="omnipod_pod_status_waiting_for_cannula_insertion">Configurazione in corso (attesa inserimento cannula)</string>
@@ -82,8 +83,10 @@
     <string name="omnipod_cmd_bolus_value">%1$.2f U</string>
     <string name="omnipod_cmd_bolus_value_with_carbs">%1$.2f U, CHO=%2$.1f g</string>
     <string name="omnipod_cmd_tbr_value">Tasso: %1$.2f U, durata: %2$d min</string>
+    <string name="omnipod_cmd_discard_pod_desc">Se premi <b>OK</b>, lo stato del pod verrà resettato forzatamente e non sarai più in grado di comunicare con il pod. Fallo solo se non riesci più a comunicare con il pod. Se puoi ancora comunicare con il pod, utilizza l\'opzione <b>Disattiva pod</b>.\n\nSe desideri procedere, assicurati anche di rimuovere il pod dal tuo corpo.</string>
     <string name="omnipod_cmd_pod_history_na">Storico pod non disponibile al momento.</string>
     <string name="omnipod_init_pod_wizard_step1_title">Riempi il pod</string>
+    <string name="omnipod_init_pod_wizard_step1_desc">\nRiempi il nuovo pod con abbastanza insulina per 3 giorni.\n\nResta in ascolto di due bip dal pod durante il processo di riempimento. Questi indicano che è stata inserita la quantità minima di 85U. Assicurati di svuotare completamente la siringa di riempimento, anche dopo aver sentito i due segnali acustici.\n\nDopo il riempimento del pod, premi <b>Avanti</b>.\n\n<b>Nota:</b> non rimuovere la protezione dell\'ago del pod in questo momento.\n<b>Nota:</b> colloca il RileyLink in posizione verticale e il pod a pochi centimetri di distanza.</string>
     <string name="omnipod_init_pod_wizard_step2_title">Caricamento</string>
     <string name="omnipod_init_pod_wizard_step2_action_header">Prova associazione nuovo pod e caricamento.\n\nQuando tutti gli elementi sono stati controllati, puoi premere <b>Avanti</b>.\n\n<b>Nota:</b> colloca il RileyLink in posizione verticale e il pod a pochi centimetri di distanza.</string>
     <string name="omnipod_init_pod_wizard_step3_title">Attacca il pod</string>
