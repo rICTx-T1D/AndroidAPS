@@ -135,6 +135,9 @@
     <string name="omnipod_suspend_delivery_short">Sospendi</string>
     <string name="omnipod_cmd_pair_and_prime">Associa e carica</string>
     <string name="omnipod_cmd_fill_cannula_set_basal_profile">Riempi cannula e imposta profilo basale</string>
+    <string name="omnipod_cancelled_old_tbr_failed_to_set_new">Cancellata la vecchia basale temporanea, ma fallita l\'impostazione della nuova basale temporanea</string>
+    <string name="omnipod_cmd_set_fake_suspended_tbr">Imposta basale temporanea fittizia perché il pod è sospeso</string>
+    <string name="omnipod_cmd_cancel_fake_suspended_tbr">Cancella basale temporanea fittizia creata perché il pod era sospeso</string>
     <string name="omnipod_expiration_alerts_updated">Configurazione avviso aggiornata nel pod</string>
     <string name="omnipod_preference_category_rileylink">RileyLink</string>
     <string name="omnipod_preference_category_other">Altro</string>
