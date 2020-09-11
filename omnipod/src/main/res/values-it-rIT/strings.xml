@@ -9,6 +9,7 @@
     <string name="omnipod_config_smb_beeps_enabled">BIP SMB abilitato</string>
     <string name="omnipod_config_tbr_beeps_enabled">BIP TBR abilitato</string>
     <string name="omnipod_config_suspend_delivery_button_enabled">Tasto \'sospendi erogazione\' abilitato</string>
+    <string name="omnipod_config_pulse_log_button_enabled">Tasto \'log impulsi\' abilitato</string>
     <string name="omnipod_config_time_change_enabled">Rilevamento ora legale/fuso orario abilitato</string>
     <string name="omnipod_config_expiration_reminder_enabled">Promemoria scadenza abilitato</string>
     <string name="omnipod_config_expiration_reminder_hours_before_shutdown">Ore prima dell\'arresto</string>
@@ -121,6 +122,7 @@
     <string name="omnipod_error_set_temp_basal_failed_old_tbr_might_be_cancelled">Impostazione basale temporanea fallita. Se una basale temporanea era precedentemente in esecuzione, potrebbe essere stata cancellata. Aggiorna manualmente lo stato del pod dalla scheda Omnipod.</string>
     <string name="omnipod_error_set_temp_basal_failed_old_tbr_cancelled_new_might_have_failed">Impostazione basale temporanea fallita. Se una basale temporanea era precedentemente in esecuzione, è stata cancellata. Aggiorna manualmente lo stato del pod dalla scheda Omnipod.</string>
     <string name="omnipod_error_set_time_failed_delivery_might_be_suspended">L\'Impostazione dell\'ora potrebbe essere fallita. L\'erogazione potrebbe essere sospesa! Aggiorna manualmente lo stato del pod dalla scheda Omnipod e riprendi l\'erogazione se necessario.</string>
+    <string name="omnipod_error_set_time_failed_delivery_suspended">Impostazione ora fallita. L\'erogazione è sospesa! Riprendi manualmente l\'erogazione dalla scheda Omnipod.</string>
     <string name="omnipod_bolus_failed_uncertain">Impossibile verificare se il bolo è riuscito. Verifica manualmente che il tuo pod stia erogando insulina ascoltando i click. <b>Se sei sicuro che il bolo non sia riuscito, dovresti eliminare manualmente l\'inserimento del bolo dalla sezione Trattamenti, anche se fai click su \'Cancella bolo\' in questo momento!</b></string>
     <string name="omnipod_bolus_failed_uncertain_smb">Impossibile verificare se il bolo SMB (%1$.2f U) è riuscito. <b>Se sei sicuro che il bolo non sia riuscito, dovresti eliminare manualmente l\'inserimento dalla sezione Trattamenti.</b></string>
     <string name="omnipod_rl_stats">Statistiche RL</string>
