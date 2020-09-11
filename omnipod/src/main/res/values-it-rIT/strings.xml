@@ -85,6 +85,7 @@
     <string name="omnipod_cmd_pod_history_na">Storico pod non disponibile al momento.</string>
     <string name="omnipod_init_pod_wizard_step1_title">Riempi il pod</string>
     <string name="omnipod_init_pod_wizard_step2_title">Caricamento</string>
+    <string name="omnipod_init_pod_wizard_step2_action_header">Prova associazione nuovo pod e caricamento.\n\nQuando tutti gli elementi sono stati controllati, puoi premere <b>Avanti</b>.\n\n<b>Nota:</b> colloca il RileyLink in posizione verticale e il pod a pochi centimetri di distanza.</string>
     <string name="omnipod_init_pod_wizard_step3_title">Attacca il pod</string>
     <string name="omnipod_init_pod_wizard_step3_desc">\nPrepara il sito di infusione. Rimuovi la protezione dell\'ago del pod e il supporto adesivo e attacca il pod al sito di infusione.\n\nSe la cannula fuoriesce premi <b>Annulla</b> e cambia pod.\n\nPremi <b>Avanti</b> per inserire la cannula e iniziare l\'erogazione della basale.</string>
     <string name="omnipod_init_pod_wizard_step4_title">Inserimento cannula</string>
@@ -115,6 +116,7 @@
     <string name="omnipod_error_set_basal_failed_delivery_suspended">Impostazione profilo basale fallita. L\'erogazione è sospesa! Riprendi manualmente l\'erogazione dalla scheda Omnipod.</string>
     <string name="omnipod_error_set_temp_basal_failed_old_tbr_might_be_cancelled">Impostazione basale temporanea fallita. Se una basale temporanea era precedentemente in esecuzione, potrebbe essere stata cancellata. Aggiorna manualmente lo stato del pod dalla scheda Omnipod.</string>
     <string name="omnipod_error_set_temp_basal_failed_old_tbr_cancelled_new_might_have_failed">Impostazione basale temporanea fallita. Se una basale temporanea era precedentemente in esecuzione, è stata cancellata. Aggiorna manualmente lo stato del pod dalla scheda Omnipod.</string>
+    <string name="omnipod_bolus_failed_uncertain">Impossibile verificare se il bolo è riuscito. Verifica manualmente che il tuo pod stia erogando insulina ascoltando i click. <b>Se sei sicuro che il bolo non sia riuscito, dovresti eliminare manualmente l\'inserimento del bolo dalla sezione Trattamenti, anche se fai click su \'Cancella bolo\' in questo momento!</b></string>
     <string name="omnipod_bolus_failed_uncertain_smb">Impossibile verificare se il bolo SMB (%1$.2f U) è riuscito. <b>Se sei sicuro che il bolo non sia riuscito, dovresti eliminare manualmente l\'inserimento dalla sezione Trattamenti.</b></string>
     <string name="omnipod_rl_stats">Statistiche RL</string>
     <string name="omnipod_pod_firmware_version">Versione firmware</string>
