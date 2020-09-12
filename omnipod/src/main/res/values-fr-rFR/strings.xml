@@ -8,17 +8,43 @@
     <string name="omnipod_config_basal_beeps_enabled">Bips basal activés</string>
     <string name="omnipod_config_smb_beeps_enabled">Bips SMB activés</string>
     <string name="omnipod_config_tbr_beeps_enabled">Bips DBT activés</string>
+    <string name="omnipod_config_suspend_delivery_button_enabled">Bouton Suspendre l\'injection activé</string>
+    <string name="omnipod_config_pulse_log_button_enabled">Bouton Enreg. Pulse activé</string>
+    <string name="omnipod_config_time_change_enabled">Changement de Zone/Heure Activé</string>
+    <string name="omnipod_config_expiration_reminder_enabled">Rappel d\'expiration activé</string>
+    <string name="omnipod_config_expiration_reminder_hours_before_shutdown">Heures avant arrêt</string>
+    <string name="omnipod_config_low_reservoir_alert_enabled">Alerte Réservoir bas activée</string>
+    <string name="omnipod_config_low_reservoir_alert_units">Nombre d\'unités</string>
     <!-- Omnipod - Fragment -->
+    <string name="omnipod_moments_ago">Il y a un moment</string>
+    <string name="omnipod_pod_mgmt">Pod mngt</string>
+    <string name="omnipod_pod_status">État du Pod</string>
+    <string name="omnipod_total_delivered_label">Total délivré</string>
     <string name="omnipod_total_delivered">%1$.2f U</string>
     <string name="omnipod_reservoir_left">%1$.2f U restantes</string>
     <string name="omnipod_reservoir_over50">Plus de 50 U</string>
+    <string name="omnipod_pod_address">Adresse du Pod</string>
+    <string name="omnipod_pod_expiry">Pod expiré</string>
     <string name="omnipod_warning">Attention</string>
+    <string name="omnipod_pod_status_no_active_pod">Pas de Pod actif</string>
+    <string name="omnipod_pod_status_waiting_for_pair_and_prime">Configuration en cours (en attente d\'appairage et d\'amorçage)</string>
+    <string name="omnipod_pod_status_waiting_for_cannula_insertion">Configuration en cours (en attente d\'insertion de canule)</string>
     <string name="omnipod_pod_status_running">En cours d\'exécution</string>
+    <string name="omnipod_pod_status_suspended">Suspendu</string>
+    <string name="omnipod_pod_status_pod_fault">Erreur Pod</string>
+    <string name="omnipod_pod_status_activation_time_exceeded">Délai d\'activation dépassé</string>
+    <string name="omnipod_pod_status_inactive">Inactif</string>
+    <string name="omnipod_pod_status_pod_fault_description">Défaut du Pod : %1$s %2$s</string>
+    <string name="omnipod_pod_active_alerts">Activer alertes Pod</string>
+    <string name="omnipod_acknowledge_active_alerts_short">Valider Alertes</string>
     <!-- Omnipod - Dialogs -->
     <string name="omnipod_frequency">Omnipod (433.91 MHz)</string>
     <!-- Omnipod - Error -->
+    <string name="omnipod_error_rileylink_address_invalid">Adresse RileyLink invalide.</string>
     <string name="omnipod_error_operation_not_possible_no_configuration">Operation impossible.\n\nVous devez d\'abord configurer l\'Omnipod pour pouvoir faire cette operation.</string>
+    <string name="omnipod_error_operation_not_possible_no_profile">Operation impossible.\n\nVous devez attendre quelques minutes, jusqu\'à ce que AAPS tente de définir le profil de basale pour la première fois.</string>
     <string name="omnipod_error_illegal_init_action_type">type d\'action d\'init Pod non autorisée : %1$s</string>
+    <string name="omnipod_error_pod_not_attached">Pas de Pod actif</string>
     <string name="omnipod_driver_error_setup_action_verification_failed">Échec de vérification de la commande</string>
     <string name="omnipod_driver_error_unexpected_exception_type">Erreur inconnue. Veuillez signaler ! (type : %1$s).</string>
     <string name="omnipod_driver_error_invalid_parameters">Échec de communication : paramètres d\'entrées reçus invalides</string>
@@ -37,8 +63,14 @@
     <string name="omnipod_driver_error_pod_fault">Un défaut du Pod a été détecté (%1$03d %2$s). Veuillez désactiver votre Pod et en démarrer un nouveau</string>
     <string name="omnipod_driver_error_pod_returned_error_response">Échec de communication : le Pod a renvoyé un message d\'erreur</string>
     <!-- Omnipod - Pod Mgmt -->
+    <string name="omnipod_pod_mgmt_title">Gestion Pod</string>
     <string name="omnipod_cmd_init_pod">Init Pod</string>
     <string name="omnipod_cmd_deactivate_pod">Désactiver Pod</string>
+    <string name="omnipod_cmd_discard_pod">Supprimer le Pod</string>
+    <string name="omnipod_cmd_pod_history">Historique Pod</string>
+    <string name="omnipod_cmd_set_bolus">Définir bolus</string>
+    <string name="omnipod_cmd_set_tbr">Définir basale temporaire</string>
+    <string name="omnipod_cmd_cancel_tbr_by_driver">Annuler basale temporaire (en interne par le pilote)</string>
     <string name="omnipod_cmd_bolus_value">%1$.2f U</string>
     <string name="omnipod_cmd_bolus_value_with_carbs">%1$.2f U, Gluc=%2$.1f g</string>
     <string name="omnipod_cmd_pod_history_na">Historique Pod non disponible pour le moment.</string>
