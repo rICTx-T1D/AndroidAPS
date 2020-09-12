@@ -4,6 +4,10 @@
     <!-- Omnipod - Base -->
     <string name="description_pump_omnipod">L\'intégration de la pompe Omnipod nécessite un boitier RileyLink (avec au minimum un firmware 2.0).</string>
     <!-- Omnipod Configuration -->
+    <string name="omnipod_config_bolus_beeps_enabled">Bips bolus activés</string>
+    <string name="omnipod_config_basal_beeps_enabled">Bips basal activés</string>
+    <string name="omnipod_config_smb_beeps_enabled">Bips SMB activés</string>
+    <string name="omnipod_config_tbr_beeps_enabled">Bips DBT activés</string>
     <!-- Omnipod - Fragment -->
     <string name="omnipod_reservoir_left">%1$.2f U restantes</string>
     <string name="omnipod_reservoir_over50">Plus de 50 U</string>
