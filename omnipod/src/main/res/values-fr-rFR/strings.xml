@@ -117,6 +117,8 @@
     <string name="omnipod_alert_low_reservoir">Réservoir bas</string>
     <string name="omnipod_alert_unknown_alert">Alerte inconnue</string>
     <string name="omnipod_rl_stats">Stats RL</string>
+    <string name="omnipod_pod_lot">LOT</string>
+    <string name="omnipod_pod_tid">TID</string>
     <string name="omnipod_pod_firmware_version">Version du firmware</string>
     <string name="omnipod_errors">Erreurs</string>
     <string name="omnipod_cmd_basal_profile_not_set_is_same">Le profil Basal est le même, donc il ne sera pas redéfini.</string>
@@ -132,7 +134,12 @@
     <string name="omnipod_less_than_a_minute_ago">Il y a moins d\'une minute</string>
     <string name="omnipod_suspend_delivery_short">Arrêter</string>
     <string name="omnipod_cmd_pair_and_prime">Appairer et amorcer</string>
+    <string name="omnipod_cmd_fill_cannula_set_basal_profile">Remplir la canule et définir le profil de basal</string>
+    <string name="omnipod_cancelled_old_tbr_failed_to_set_new">Ancien débit de basal temporaire annulé, mais impossible de définir le nouveau débits de basal temporaire</string>
+    <string name="omnipod_cmd_set_fake_suspended_tbr">Définir un faux débit de basal temporaire car le Pod est suspendu</string>
+    <string name="omnipod_cmd_cancel_fake_suspended_tbr">Annuler le faux débit de basal temporaire créé à cause du Pod suspendu</string>
     <string name="omnipod_uncertain">incertain</string>
+    <string name="omnipod_expiration_alerts_updated">Configuration des alertes mise à jour dans le Pod</string>
     <string name="omnipod_preference_category_rileylink">RileyLink</string>
     <string name="omnipod_preference_category_other">Autres</string>
     <string name="omnipod_preference_category_alerts">Alertes</string>
