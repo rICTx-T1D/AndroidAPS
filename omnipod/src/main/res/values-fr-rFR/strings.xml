@@ -9,17 +9,38 @@
     <string name="omnipod_config_smb_beeps_enabled">Bips SMB activés</string>
     <string name="omnipod_config_tbr_beeps_enabled">Bips DBT activés</string>
     <!-- Omnipod - Fragment -->
+    <string name="omnipod_total_delivered">%1$.2f U</string>
     <string name="omnipod_reservoir_left">%1$.2f U restantes</string>
     <string name="omnipod_reservoir_over50">Plus de 50 U</string>
+    <string name="omnipod_warning">Attention</string>
+    <string name="omnipod_pod_status_running">En cours d\'exécution</string>
     <!-- Omnipod - Dialogs -->
     <string name="omnipod_frequency">Omnipod (433.91 MHz)</string>
     <!-- Omnipod - Error -->
+    <string name="omnipod_error_operation_not_possible_no_configuration">Operation impossible.\n\nVous devez d\'abord configurer l\'Omnipod pour pouvoir faire cette operation.</string>
     <string name="omnipod_error_illegal_init_action_type">type d\'action d\'init Pod non autorisée : %1$s</string>
+    <string name="omnipod_driver_error_setup_action_verification_failed">Échec de vérification de la commande</string>
     <string name="omnipod_driver_error_unexpected_exception_type">Erreur inconnue. Veuillez signaler ! (type : %1$s).</string>
+    <string name="omnipod_driver_error_invalid_parameters">Échec de communication : paramètres d\'entrées reçus invalides</string>
+    <string name="omnipod_driver_error_communication_failed_timeout">Échec de communication : délai expiré</string>
     <string name="omnipod_driver_error_communication_failed_unexpected_exception">Échec de communication : Erreur inconnue. Veuillez signaler !</string>
+    <string name="omnipod_driver_error_crc_mismatch">Échec de communication : vérification de l\'intégrité du message échouée</string>
+    <string name="omnipod_driver_error_invalid_packet_type">Échec de communication : paquet reçu du Pod invalide</string>
+    <string name="omnipod_driver_error_invalid_progress_state">Échec de communication : état du Pod incorrect</string>
+    <string name="omnipod_driver_error_invalid_response">Échec de communication : réponse invalide reçue du Pod</string>
+    <string name="omnipod_driver_error_invalid_message_sequence_number">Échec de communication : message reçu du Pod avec un numéro de séquence invalide</string>
+    <string name="omnipod_driver_error_invalid_message_address">Échec de communication : message reçu du Pod avec une adresse invalide</string>
+    <string name="omnipod_driver_error_message_decoding_failed">Échec de communication : échec du décodage du message reçu du Pod</string>
+    <string name="omnipod_driver_error_nonce_resync_failed">Échec de communication : resynchro nonce échouée</string>
+    <string name="omnipod_driver_error_nonce_out_of_sync">Échec de communication : nonce non synchro</string>
+    <string name="omnipod_driver_error_not_enough_data">Échec de communication : pas assez de données reçues du Pod</string>
+    <string name="omnipod_driver_error_pod_fault">Un défaut du Pod a été détecté (%1$03d %2$s). Veuillez désactiver votre Pod et en démarrer un nouveau</string>
+    <string name="omnipod_driver_error_pod_returned_error_response">Échec de communication : le Pod a renvoyé un message d\'erreur</string>
     <!-- Omnipod - Pod Mgmt -->
     <string name="omnipod_cmd_init_pod">Init Pod</string>
     <string name="omnipod_cmd_deactivate_pod">Désactiver Pod</string>
+    <string name="omnipod_cmd_bolus_value">%1$.2f U</string>
+    <string name="omnipod_cmd_bolus_value_with_carbs">%1$.2f U, Gluc=%2$.1f g</string>
     <string name="omnipod_cmd_pod_history_na">Historique Pod non disponible pour le moment.</string>
     <string name="omnipod_init_pod_wizard_step1_title">Remplir le Pod</string>
     <string name="omnipod_init_pod_wizard_step2_title">Amorçage</string>
@@ -28,14 +49,41 @@
     <string name="omnipod_init_pod_wizard_step4_title">Insertion canule</string>
     <string name="omnipod_init_pod_wizard_step4_action_header">Tentative de définir le schéma de basal et d\'insertion de la canule.\n\nQuand tous les items sont cochés, appuyez sur <b>Suivant</b>.</string>
     <string name="omnipod_init_pod_wizard_pod_info_init_pod_description">\nLe Pod est maintenant actif.\n\nVos débits de basal ont été programmés et la canule a été insérée.\n\nVeuillez verifier que la canule a été insérée correctement et remplacez votre Pod si vous pensez que ce n\'est pas le cas.</string>
+    <string name="omnipod_remove_pod_wizard_step1_title">Désactiver Pod</string>
     <string name="omnipod_remove_pod_wizard_step1_desc">\nAppuyez sur <b>Suivant</b> pour désactiver le Pod.\n\n<b>Remarque :</b> Cela suspendra l\'injection de l\'insuline et désactivera le Pod.</string>
     <string name="omnipod_remove_pod_wizard_step2_title">Désactivation du Pod</string>
     <string name="omnipod_init_pod_wizard_pod_info_remove_pod_description">Pod désactivé.\n\nVeuillez enlever le Pod de votre corps et le jeter.</string>
     <string name="omnipod_init_pod_pair_pod">Appairer le Pod</string>
     <string name="omnipod_init_pod_prime_pod">Amorcer le Pod</string>
+    <string name="omnipod_deactivate_pod_deactivate_pod">Désactiver Pod</string>
     <!-- Omnipod - Base -->
+    <string name="omnipod_alert_finish_pairing_reminder">Rappel fin d\'appairage</string>
     <string name="omnipod_alert_finish_setup_reminder_reminder">Rappel fin de configuration</string>
+    <string name="omnipod_alert_expiration">Le Pod expire bientôt</string>
+    <string name="omnipod_alert_expiration_advisory">Le Pod expire bientôt</string>
     <string name="omnipod_alert_shutdown_imminent">Arrêt imminent</string>
     <string name="omnipod_alert_low_reservoir">Réservoir bas</string>
     <string name="omnipod_alert_unknown_alert">Alerte inconnue</string>
+    <string name="omnipod_errors">Erreurs</string>
+    <string name="omnipod_cmd_basal_profile_not_set_is_same">Le profil Basal est le même, donc il ne sera pas redéfini.</string>
+    <string name="omnipod_refresh">Actualiser</string>
+    <string name="omnipod_suspend_delivery_short">Arrêter</string>
+    <string name="omnipod_preference_category_rileylink">RileyLink</string>
+    <string name="omnipod_preference_category_other">Autres</string>
+    <string name="omnipod_wizard_button_exit">Quitter</string>
+    <string name="omnipod_wizard_button_next">Suivant</string>
+    <string name="omnipod_history_item_description">Description</string>
+    <string name="omnipod_history_item_date">Date</string>
+    <plurals name="omnipod_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="omnipod_hours">
+        <item quantity="one">%1$d heure</item>
+        <item quantity="other">%1$d heures</item>
+    </plurals>
+    <plurals name="omnipod_days">
+        <item quantity="one">%1$d jour</item>
+        <item quantity="other">%1$d jours</item>
+    </plurals>
 </resources>
