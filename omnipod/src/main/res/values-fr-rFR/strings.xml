@@ -66,6 +66,7 @@
     <string name="omnipod_alert_unknown_alert">Alerte inconnue</string>
     <string name="omnipod_errors">Erreurs</string>
     <string name="omnipod_cmd_basal_profile_not_set_is_same">Le profil Basal est le même, donc il ne sera pas redéfini.</string>
+    <string name="omnipod_time_ago">il y a %1$s</string>
     <string name="omnipod_refresh">Actualiser</string>
     <string name="omnipod_suspend_delivery_short">Arrêter</string>
     <string name="omnipod_preference_category_rileylink">RileyLink</string>
