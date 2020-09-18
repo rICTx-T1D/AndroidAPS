@@ -3,11 +3,20 @@ package info.nightscout.androidaps.watchfaces;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.wearable.watchface.WatchFaceStyle;
+import android.text.format.DateFormat;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.annotation.ColorInt;
 import androidx.core.content.ContextCompat;
 import com.ustwo.clockwise.common.WatchMode;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import info.nightscout.androidaps.R;
+import info.nightscout.androidaps.data.RawDisplayData;
 import info.nightscout.androidaps.interaction.menus.MainMenuActivity;
 
 public class RICTxWF01 extends BaseWatchFace {
@@ -22,8 +31,21 @@ public class RICTxWF01 extends BaseWatchFace {
         performViewSetup();
     }
 
+    public void myTest() {
+        setDataFields();
+        rawData.sBgi="99.9";
+        rawData.showBGI=true;
+        rawData.sIOB2="88.49";
+        rawData.detailedIOB=true;
+        rawData.sCOB2="333g";
+        invalidate();
+        //setDateAndTime();
+    }
+
+
     @Override
     protected void onTapCommand(int tapType, int x, int y, long eventTime) {
+        if (x<10) myTest();
 
         int extra = mSgv!=null?(mSgv.getRight() - mSgv.getLeft())/2:0;
 
@@ -48,6 +70,8 @@ public class RICTxWF01 extends BaseWatchFace {
             }
             sgvTapTime = eventTime;
         }
+
+
     }
 
     private void changeChartTimeframe() {
@@ -69,6 +93,7 @@ public class RICTxWF01 extends BaseWatchFace {
         @ColorInt final int dividerBgColor = ContextCompat.getColor(getApplicationContext(),
                 dividerMatchesBg ? R.color.dark_background : R.color.dark_statusView);
 
+        /*
         mLinearLayout.setBackgroundColor(dividerBgColor);
         mLinearLayout2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
         mRelativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
@@ -82,6 +107,8 @@ public class RICTxWF01 extends BaseWatchFace {
         mLoop.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
 
         setTextSizes();
+
+
 
         if (rawData.sgvLevel == 1) {
             mSgv.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_highColor));
@@ -127,6 +154,8 @@ public class RICTxWF01 extends BaseWatchFace {
             pointSize = 2;
             setupCharts();
         }
+
+        */
     }
 
     protected void setColorLowRes() {
