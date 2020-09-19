@@ -34,9 +34,9 @@ public class RICTxWF01 extends BaseWatchFace {
     public void myTest() {
         setDataFields();
         rawData.sBgi="99.9";
-        rawData.showBGI=true;
-        rawData.sIOB2="88.49";
-        rawData.detailedIOB=true;
+        rawData.showBGI = true;
+        rawData.sIOB2 = "88.44";
+        rawData.detailedIOB = true;
         rawData.sCOB2="333g";
         invalidate();
         //setDateAndTime();
@@ -143,7 +143,7 @@ public class RICTxWF01 extends BaseWatchFace {
         } else {
             mLoop.setBackgroundResource(R.drawable.loop_red_25);
         }
-
+        */
         if (chart != null) {
             highColor = ContextCompat.getColor(getApplicationContext(), R.color.dark_highColor);
             lowColor = ContextCompat.getColor(getApplicationContext(), R.color.dark_lowColor);
@@ -151,11 +151,11 @@ public class RICTxWF01 extends BaseWatchFace {
             gridColor = ContextCompat.getColor(getApplicationContext(), R.color.dark_gridColor);
             basalBackgroundColor = ContextCompat.getColor(getApplicationContext(), R.color.basal_dark);
             basalCenterColor = ContextCompat.getColor(getApplicationContext(), R.color.basal_light);
-            pointSize = 2;
+            pointSize = 1;
             setupCharts();
         }
 
-        */
+
     }
 
     protected void setColorLowRes() {
