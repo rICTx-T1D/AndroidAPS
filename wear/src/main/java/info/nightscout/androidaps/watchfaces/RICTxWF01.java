@@ -3,20 +3,14 @@ package info.nightscout.androidaps.watchfaces;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.wearable.watchface.WatchFaceStyle;
-import android.text.format.DateFormat;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.core.content.ContextCompat;
+
 import com.ustwo.clockwise.common.WatchMode;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import info.nightscout.androidaps.R;
-import info.nightscout.androidaps.data.RawDisplayData;
 import info.nightscout.androidaps.interaction.menus.MainMenuActivity;
 
 public class RICTxWF01 extends BaseWatchFace {
@@ -33,11 +27,11 @@ public class RICTxWF01 extends BaseWatchFace {
 
     public void myTest() {
         setDataFields();
-        rawData.sBgi="99.9";
+        rawData.sBgi = "99.9";
         rawData.showBGI = true;
         rawData.sIOB2 = "88.44";
         rawData.detailedIOB = true;
-        rawData.sCOB2="333g";
+        rawData.sCOB2 = "333g";
         invalidate();
         //setDateAndTime();
     }
@@ -45,25 +39,25 @@ public class RICTxWF01 extends BaseWatchFace {
 
     @Override
     protected void onTapCommand(int tapType, int x, int y, long eventTime) {
-        if (x<10) myTest();
+        //if (x < 10) myTest();
 
-        int extra = mSgv!=null?(mSgv.getRight() - mSgv.getLeft())/2:0;
+        int extra = mSgv != null ? (mSgv.getRight() - mSgv.getLeft()) / 2 : 0;
 
-        if (tapType == TAP_TYPE_TAP&&
-                x >=chart.getLeft() &&
-                x <= chart.getRight()&&
+        if (tapType == TAP_TYPE_TAP &&
+                x >= chart.getLeft() &&
+                x <= chart.getRight() &&
                 y >= chart.getTop() &&
-                y <= chart.getBottom()){
-            if (eventTime - chartTapTime < 800){
+                y <= chart.getBottom()) {
+            if (eventTime - chartTapTime < 800) {
                 changeChartTimeframe();
             }
             chartTapTime = eventTime;
-        } else if (tapType == TAP_TYPE_TAP&&
-                x + extra >=mSgv.getLeft() &&
-                x - extra <= mSgv.getRight()&&
+        } else if (tapType == TAP_TYPE_TAP &&
+                x + extra >= mSgv.getLeft() &&
+                x - extra <= mSgv.getRight() &&
                 y >= mSgv.getTop() &&
-                y <= mSgv.getBottom()){
-            if (eventTime - sgvTapTime < 800){
+                y <= mSgv.getBottom()) {
+            if (eventTime - sgvTapTime < 800) {
                 Intent intent = new Intent(this, MainMenuActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
@@ -76,13 +70,17 @@ public class RICTxWF01 extends BaseWatchFace {
 
     private void changeChartTimeframe() {
         int timeframe = Integer.parseInt(sharedPrefs.getString("chart_timeframe", "3"));
-        timeframe = (timeframe%5) + 1;
+        timeframe = (timeframe % 5) + 1;
         sharedPrefs.edit().putString("chart_timeframe", "" + timeframe).commit();
     }
 
     @Override
-    protected WatchFaceStyle getWatchFaceStyle(){
-        return new WatchFaceStyle.Builder(this).setAcceptsTapEvents(true).build();
+    protected WatchFaceStyle getWatchFaceStyle() {
+        return new WatchFaceStyle.Builder(this)
+                .setAcceptsTapEvents(true)
+                .setHideNotificationIndicator(false)
+                .setShowUnreadCountIndicator(true)
+                .build();
     }
 
     protected void setColorDark() {
