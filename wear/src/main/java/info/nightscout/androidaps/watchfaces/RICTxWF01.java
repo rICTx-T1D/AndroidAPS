@@ -1,11 +1,9 @@
 package info.nightscout.androidaps.watchfaces;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.wearable.watchface.WatchFaceStyle;
 import android.view.LayoutInflater;
 
-import androidx.annotation.ColorInt;
 import androidx.core.content.ContextCompat;
 
 import com.ustwo.clockwise.common.WatchMode;
@@ -24,18 +22,6 @@ public class RICTxWF01 extends BaseWatchFace {
         layoutView = inflater.inflate(R.layout.activity_rictxwf01, null);
         performViewSetup();
     }
-
-    public void myTest() {
-        setDataFields();
-        rawData.sBgi = "99.9";
-        rawData.showBGI = true;
-        rawData.sIOB2 = "88.44";
-        rawData.detailedIOB = true;
-        rawData.sCOB2 = "333g";
-        invalidate();
-        //setDateAndTime();
-    }
-
 
     @Override
     protected void onTapCommand(int tapType, int x, int y, long eventTime) {
@@ -84,30 +70,6 @@ public class RICTxWF01 extends BaseWatchFace {
     }
 
     protected void setColorDark() {
-        @ColorInt final int dividerTxtColor = dividerMatchesBg ?
-                ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor) : Color.BLACK;
-        @ColorInt final int dividerBatteryOkColor = ContextCompat.getColor(getApplicationContext(),
-                dividerMatchesBg ? R.color.dark_midColor : R.color.dark_uploaderBattery);
-        @ColorInt final int dividerBgColor = ContextCompat.getColor(getApplicationContext(),
-                dividerMatchesBg ? R.color.dark_background : R.color.dark_statusView);
-
-        /*
-        mLinearLayout.setBackgroundColor(dividerBgColor);
-        mLinearLayout2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
-        mRelativeLayout.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_background));
-        mTime.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mIOB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mIOB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mCOB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mCOB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mDay.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mMonth.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-        mLoop.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
-
-        setTextSizes();
-
-
-
         if (rawData.sgvLevel == 1) {
             mSgv.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_highColor));
             mDirection.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_highColor));
@@ -126,22 +88,19 @@ public class RICTxWF01 extends BaseWatchFace {
         }
 
         if (rawData.batteryLevel == 1) {
-            mUploaderBattery.setTextColor(dividerBatteryOkColor);
+            mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_midColor));
         } else {
             mUploaderBattery.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.dark_uploaderBatteryEmpty));
         }
-        mRigBattery.setTextColor(dividerTxtColor);
-        mDelta.setTextColor(dividerTxtColor);
-        mAvgDelta.setTextColor(dividerTxtColor);
-        mBasalRate.setTextColor(dividerTxtColor);
-        mBgi.setTextColor(dividerTxtColor);
 
+        /* not be implement
         if (loopLevel == 1) {
             mLoop.setBackgroundResource(R.drawable.loop_green_25);
         } else {
             mLoop.setBackgroundResource(R.drawable.loop_red_25);
         }
         */
+
         if (chart != null) {
             highColor = ContextCompat.getColor(getApplicationContext(), R.color.dark_highColor);
             lowColor = ContextCompat.getColor(getApplicationContext(), R.color.dark_lowColor);
@@ -168,17 +127,4 @@ public class RICTxWF01 extends BaseWatchFace {
         }
     }
 
-    protected void setTextSizes() {
-
-        if (mIOB1 != null && mIOB2 != null) {
-
-            if (rawData.detailedIOB) {
-                mIOB1.setTextSize(14);
-                mIOB2.setTextSize(10);
-            } else {
-                mIOB1.setTextSize(10);
-                mIOB2.setTextSize(14);
-            }
-        }
-    }
 }
