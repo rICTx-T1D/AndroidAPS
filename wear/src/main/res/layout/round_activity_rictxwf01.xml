@@ -163,7 +163,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="-11dp"
+                        android:layout_marginTop="-10dp"
                         android:layout_weight="11"
                         android:baselineAligned="false"
                         android:gravity="center_vertical|center_horizontal"
@@ -402,6 +402,8 @@
                 android:baselineAligned="false"
                 android:gravity="left|top"
                 android:orientation="vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
                 android:weightSum="10">
 
                 <!--  right side bottom - statusbar  2/10 -->
