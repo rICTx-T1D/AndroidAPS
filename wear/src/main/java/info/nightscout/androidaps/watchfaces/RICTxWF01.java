@@ -2,7 +2,9 @@ package info.nightscout.androidaps.watchfaces;
 
 import android.content.Intent;
 import android.support.wearable.watchface.WatchFaceStyle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 
 import androidx.core.content.ContextCompat;
 
@@ -10,6 +12,10 @@ import com.ustwo.clockwise.common.WatchMode;
 
 import info.nightscout.androidaps.R;
 import info.nightscout.androidaps.interaction.menus.MainMenuActivity;
+
+/**
+ * Created by rICTx-T1D on 16/Sep/20  (see https://github.com/rICTx-T1D)
+ */
 
 public class RICTxWF01 extends BaseWatchFace {
     private long chartTapTime = 0;
@@ -23,26 +29,13 @@ public class RICTxWF01 extends BaseWatchFace {
         performViewSetup();
     }
 
+
     @Override
     protected void onTapCommand(int tapType, int x, int y, long eventTime) {
-        //if (x < 10) myTest();
+        //tapType = TAP_TYPE_TAP;
+        Log.d("onTapCommand: DeviceWidth x DeviceHeight   ///  x , y, TapType  >> ", Integer.toString(getWidth()) + " x " + Integer.toString(getHeight()) + " ///  " + Integer.toString(x) + " , " + Integer.toString(y) + " , " + Integer.toString(tapType));
 
-        int extra = mSgv != null ? (mSgv.getRight() - mSgv.getLeft()) / 2 : 0;
-
-        if (tapType == TAP_TYPE_TAP &&
-                x >= chart.getLeft() &&
-                x <= chart.getRight() &&
-                y >= chart.getTop() &&
-                y <= chart.getBottom()) {
-            if (eventTime - chartTapTime < 800) {
-                changeChartTimeframe();
-            }
-            chartTapTime = eventTime;
-        } else if (tapType == TAP_TYPE_TAP &&
-                x + extra >= mSgv.getLeft() &&
-                x - extra <= mSgv.getRight() &&
-                y >= mSgv.getTop() &&
-                y <= mSgv.getBottom()) {
+        if (tapType == TAP_TYPE_TAP) {
             if (eventTime - sgvTapTime < 800) {
                 Intent intent = new Intent(this, MainMenuActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -50,15 +43,8 @@ public class RICTxWF01 extends BaseWatchFace {
             }
             sgvTapTime = eventTime;
         }
-
-
     }
 
-    private void changeChartTimeframe() {
-        int timeframe = Integer.parseInt(sharedPrefs.getString("chart_timeframe", "3"));
-        timeframe = (timeframe % 5) + 1;
-        sharedPrefs.edit().putString("chart_timeframe", "" + timeframe).commit();
-    }
 
     @Override
     protected WatchFaceStyle getWatchFaceStyle() {
@@ -112,6 +98,14 @@ public class RICTxWF01 extends BaseWatchFace {
             setupCharts();
         }
 
+        if (mLinearLayout2 != null) {
+            Log.v("dividerMatchesBg", (dividerMatchesBg ? "true" : "false"));
+            if (!dividerMatchesBg) {
+                mLinearLayout2.setVisibility(View.VISIBLE);
+            } else {
+                mLinearLayout2.setVisibility(View.INVISIBLE);
+            }
+        }
 
     }
 
