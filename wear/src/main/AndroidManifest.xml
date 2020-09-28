@@ -181,6 +181,9 @@
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview"
                 android:resource="@drawable/watchface_rictxwf01" />
+            <meta-data
+                android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="info.nightscout.androidaps.interaction.configurationActivities.RICTxWF01ConfigurationActivity" />
 
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
@@ -513,15 +516,20 @@
         </activity>
         <activity
             android:name=".interaction.actions.FillActivity"
-            android:label="@string/menu_prime_fill">
-        </activity>
+            android:label="@string/menu_prime_fill"></activity>
         <activity
             android:name=".interaction.actions.ECarbActivity"
-            android:label="@string/action_carbs">
-        </activity>
+            android:label="@string/action_carbs"></activity>
         <activity
             android:name=".interaction.actions.TempTargetActivity"
-            android:label="@string/menu_tempt">
+            android:label="@string/menu_tempt"></activity>
+        <activity android:name=".interaction.configurationActivities.RICTxWF01ConfigurationActivity">
+            <intent-filter>
+                <action android:name="info.nightscout.androidaps.interaction.configurationActivities.RICTxWF01ConfigurationActivity" />
+
+                <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 </manifest>

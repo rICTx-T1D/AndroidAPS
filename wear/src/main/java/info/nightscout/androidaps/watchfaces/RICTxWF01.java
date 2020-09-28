@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.wearable.watchface.WatchFaceStyle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 
 import androidx.core.content.ContextCompat;
 
@@ -98,14 +97,22 @@ public class RICTxWF01 extends BaseWatchFace {
             setupCharts();
         }
 
+        /* frame styles*/
         if (mLinearLayout2 != null) {
-            Log.v("dividerMatchesBg", (dividerMatchesBg ? "true" : "false"));
-            if (!dividerMatchesBg) {
-                mLinearLayout2.setVisibility(View.VISIBLE);
-            } else {
-                mLinearLayout2.setVisibility(View.INVISIBLE);
+            String styleDrawableName = "rictxwf01_bg_" + sharedPrefs.getString("rictxwf01_frameStyle", "red") + "_" + (bIsRound ? "round" : "rect");
+            Log.d("rictxwf01_frameStyle", styleDrawableName);
+            try {
+                mLinearLayout2.setBackground(getResources().getDrawable(getResources().getIdentifier(styleDrawableName, "drawable", getApplicationContext().getPackageName())));
+            } catch (Exception e) {
+                Log.e("rictxwf01_frameStyle", "RESOURCE NOT FOUND >> " + styleDrawableName);
             }
         }
+
+        /* ToDo  Implement hourly vibartion
+        Boolean hourlyVibratePref = sharedPrefs.getBoolean("rictxwf01_vibrateHourly", false);
+        Log.i("hourlyVibratePref",Boolean.toString(hourlyVibratePref));
+        */
+
 
     }
 
