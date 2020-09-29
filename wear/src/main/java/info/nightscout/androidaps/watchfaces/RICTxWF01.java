@@ -99,7 +99,8 @@ public class RICTxWF01 extends BaseWatchFace {
 
         /* frame styles*/
         if (mLinearLayout2 != null) {
-            String styleDrawableName = "rictxwf01_bg_" + sharedPrefs.getString("rictxwf01_frameStyle", "red") + "_" + (bIsRound ? "round" : "rect");
+            String displayFormatType = (mLinearLayout2.getContentDescription().toString().startsWith("round") ? "round" : "rect");
+            String styleDrawableName = "rictxwf01_bg_" + sharedPrefs.getString("rictxwf01_frameStyle", "red") + "_" + displayFormatType;
             Log.d("rictxwf01_frameStyle", styleDrawableName);
             try {
                 mLinearLayout2.setBackground(getResources().getDrawable(getResources().getIdentifier(styleDrawableName, "drawable", getApplicationContext().getPackageName())));
