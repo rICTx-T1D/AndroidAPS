@@ -8,6 +8,7 @@
         <item>Lime</item>
         <item>Orange</item>
         <item>BlueGray</item>
+        <item>Rainbow-Style</item>
         <item>SIMPLE-Style</item>
         <item>NO-Style</item>
     </string-array>
@@ -19,6 +20,7 @@
         <item>lime</item>
         <item>orange</item>
         <item>bluegray</item>
+        <item>rainbow</item>
         <item>simplestyle</item>
         <item>nostyle</item>
     </string-array>

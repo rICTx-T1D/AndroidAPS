@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <ListPreference
         android:defaultValue="red"
@@ -7,6 +9,22 @@
         android:entryValues="@array/rictxwf01_styles_values"
         android:key="rictxwf01_frameStyle"
         android:title="Choose frame color &amp; style" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_date"
+        android:title="@string/pref_show_date"
+        app:wear_iconOff="@drawable/settings_off"
+        app:wear_iconOn="@drawable/settings_on" />
+
+    <!--  Idea for future implementation  @ToDo Implement Background-Images
+    <ListPreference
+        android:defaultValue="red"
+        android:entries="@array/rictxwf01_backgroundimage_name"
+        android:entryValues="@array/rictxwf01_backgroundimage_values"
+        android:key="rictxwf01_backgroundImage"
+        android:title="Background Image" />
+    -->
 
     <!--  Idea for future implementation  @ToDo Implement Hourly Vibration
     <CheckBoxPreference
@@ -16,5 +34,4 @@
         app:wear_iconOff="@drawable/settings_off"
         app:wear_iconOn="@drawable/settings_on" />
     -->
-
 </PreferenceScreen>

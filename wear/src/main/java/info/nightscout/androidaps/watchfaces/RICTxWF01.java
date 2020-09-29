@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.wearable.watchface.WatchFaceStyle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.widget.LinearLayout;
 
 import androidx.core.content.ContextCompat;
 
@@ -98,16 +99,23 @@ public class RICTxWF01 extends BaseWatchFace {
         }
 
         /* frame styles*/
-        if (mLinearLayout2 != null) {
-            String displayFormatType = (mLinearLayout2.getContentDescription().toString().startsWith("round") ? "round" : "rect");
+        LinearLayout mShapesElements = layoutView.findViewById(R.id.shapes_elements);
+        if (mShapesElements != null) {
+            String displayFormatType = (mShapesElements.getContentDescription().toString().startsWith("round") ? "round" : "rect");
             String styleDrawableName = "rictxwf01_bg_" + sharedPrefs.getString("rictxwf01_frameStyle", "red") + "_" + displayFormatType;
             Log.d("rictxwf01_frameStyle", styleDrawableName);
             try {
-                mLinearLayout2.setBackground(getResources().getDrawable(getResources().getIdentifier(styleDrawableName, "drawable", getApplicationContext().getPackageName())));
+                mShapesElements.setBackground(getResources().getDrawable(getResources().getIdentifier(styleDrawableName, "drawable", getApplicationContext().getPackageName())));
             } catch (Exception e) {
                 Log.e("rictxwf01_frameStyle", "RESOURCE NOT FOUND >> " + styleDrawableName);
             }
         }
+
+
+        /* ToDo  Implement a configurable background image
+         *  layoutView.setBackground();
+         */
+
 
         /* ToDo  Implement hourly vibartion
         Boolean hourlyVibratePref = sharedPrefs.getBoolean("rictxwf01_vibrateHourly", false);
